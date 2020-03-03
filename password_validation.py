@@ -1,7 +1,7 @@
 # validation char Alphabet(Upper and Lower), Digit(0-9), Special Char and len > 8
 st = input()  # enter the password
 d = au = al = sc = 0
-if len(st) > 8:
+if len(st) >= 8:
     for i in st:
         if i.isdigit():
             d += 1
@@ -23,5 +23,13 @@ Lower Alphabet: {al}
 Special Char: {sc} 
 '''
 print(h)
+
+
+# get valid password from user forcely
+pas = ' '
+while pas:
+    pas = input('enter the valid password Min 1Upper/1Lower/1Digit/1Special and len>8 ')
+    if len(pas) > 8:
+        pass
 
 

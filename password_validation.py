@@ -27,6 +27,7 @@ print(h)
 
 # get valid password from user forcely
 # pas = ' '
+
 dct = {'special char': 0, 'digits': 0, 'alpha lower': 0, 'alpha upper': 0}
 while 1:
     pas = input('\n\nenter the valid password Min 1Upper/1Lower/1Digit/1Special and len>8 ')

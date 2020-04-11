@@ -1,0 +1,3 @@
+# valid paranthesis
+a = input()
+

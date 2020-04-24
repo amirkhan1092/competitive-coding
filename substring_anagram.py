@@ -9,11 +9,12 @@ def substring_anagram(dictionary: list, sub: list) -> None:
     return m
 
 
-all_word = ['abc', 'a', 'bca', 'abcd', 'dac', 'acd']
-query = ['abc', 'a', 'ada']
 
+#
+# all_word = ['abc', 'a', 'bca', 'abcd', 'dac', 'acd']
+# query = ['abc', 'a', 'ada']
+
+all_word = eval(input())  # user having all anagram pattern
+query = eval(input())  # user enter the sublist
 out_list = substring_anagram(all_word, query)
 print(out_list)
-
-
-

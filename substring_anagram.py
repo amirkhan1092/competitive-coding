@@ -1,6 +1,8 @@
 # substring anagram in a given string with all matches
 def substring_anagram(dictionary: list, sub: list) -> None:
-    print(dictionary)
+    dictionary_sort = list(map(sorted, dictionary))
+    sub_sort = map(sorted, sub)
+
     print(sub)
     return sub
 

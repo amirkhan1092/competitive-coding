@@ -2,9 +2,11 @@
 def substring_anagram(dictionary: list, sub: list) -> None:
     dictionary_sort = list(map(sorted, dictionary))
     sub_sort = map(sorted, sub)
+    m = []
+    for i in sub_sort:
+        m.append(dictionary_sort.count(i))
 
-    print(sub)
-    return sub
+    return m
 
 
 all_word = ['abc', 'a', 'bca', 'abcd', 'dac', 'acd']

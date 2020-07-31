@@ -42,3 +42,21 @@ Output:
 
 
 '''
+
+import itertools
+t=int(input())
+for i in range(t):
+    n=int(input())
+    l=list(map(int,input().split()))
+    sume=int(input())
+    l1=[]
+    for j in range(1,n+1):
+        c=list(itertools.combinations(l,j))
+        l1.extend(c)
+    for k in l1:
+        # print(k)
+        if sum(k)==sume:
+            print(k)
+
+
+

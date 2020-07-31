@@ -53,10 +53,11 @@ for i in range(t):
     for j in range(1,n+1):
         c=list(itertools.combinations(l,j))
         l1.extend(c)
+    ss = set()
     for k in l1:
         # print(k)
-        if sum(k)==sume:
-            print(k)
+        if sum(k) == sume:
+            ss.add(tuple(sorted(k)))
 
-
+    print(*ss, sep='\n')
 

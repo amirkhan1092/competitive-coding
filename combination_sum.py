@@ -60,7 +60,7 @@ for i in range(t):
             sst.add(tuple(sorted(k)))
 
     if len(sst):
-        st = ''.join(map(str,sst)).replace(',', '')
+        st = ''.join(map(str,sorted(sst))).replace(',', '')
         print(st)
     else:
         print('Empty')

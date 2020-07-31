@@ -58,7 +58,11 @@ for i in range(t):
     for k in l1:
         if sum(k) == sume:
             sst.add(tuple(sorted(k)))
-    print(*sst)
+
+    if len(sst):
+        print(*sst,end='')
+    else:
+        print('Empty')
 
 
 

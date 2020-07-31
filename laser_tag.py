@@ -1,4 +1,4 @@
-import itertools as ite
+# import itertools as ite
 
 team, hr = map(int, input().split())
 

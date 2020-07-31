@@ -1,4 +1,5 @@
-''' Given an array of integers A and a sum B, find all unique combinations in A where the sum is equal to B.
+'''
+Given an array of integers A and a sum B, find all unique combinations in A where the sum is equal to B.
 
 ach number in A may only be used once in the combination.
 
@@ -42,7 +43,6 @@ Output:
 
 
 '''
-
 import itertools
 t=int(input())
 for i in range(t):
@@ -53,11 +53,14 @@ for i in range(t):
     for j in range(1,n+1):
         c=list(itertools.combinations(l,j))
         l1.extend(c)
-    ss = set()
-    for k in l1:
-        # print(k)
-        if sum(k) == sume:
-            ss.add(tuple(sorted(k)))
 
-    print(*ss, sep='\n')
+    sst = set()
+    for k in l1:
+        if sum(k) == sume:
+            sst.add(tuple(sorted(k)))
+    print(*sst)
+
+
+
+
 

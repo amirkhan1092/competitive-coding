@@ -13,10 +13,9 @@ after removing k=1
 k = int(input())
 st = input()
 
-lt = sorted(st)
-for i in range(k):
+for i in sorted(st)[:k]:
     slt = list(st)
-    slt.remove(lt[i])
+    slt.remove(i)
     st = ''.join(slt)
 print(st)
 

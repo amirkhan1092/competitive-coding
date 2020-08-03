@@ -18,9 +18,8 @@ import itertools as itr
 N = int(input())
 S = input()  # sequence starts here S = 1
 print(S)
-
 for i in range(N-1):
-    for key, td in itr.groupby(S, lambda x:x):
+    for key, td in itr.groupby(S):
         S = key+str(len(list(td)))
         print(S, end='')
     print()

@@ -15,3 +15,5 @@ As an example, the fourth term is 1211, since the third term consists of one 2 a
 Given an integer N, print the Nth term of this sequence.
 '''
 N = int(input())
+for i in range(N):
+    pass

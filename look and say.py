@@ -14,6 +14,15 @@ As an example, the fourth term is 1211, since the third term consists of one 2 a
 
 Given an integer N, print the Nth term of this sequence.
 '''
+import itertools as itr
 N = int(input())
-for i in range(N):
-    pass
+S = input()  # sequence starts here S = 1
+print(S)
+
+for i in range(N-1):
+    for key, td in itr.groupby(S, lambda x:x):
+        S = key+str(len(list(td)))
+        print(S, end='')
+    print()
+
+

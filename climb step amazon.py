@@ -29,7 +29,7 @@ for i in range(1, N+1):
         if sum(comb) == N:
             L.append(comb)
 
-
+print(set(L))
 
 
 

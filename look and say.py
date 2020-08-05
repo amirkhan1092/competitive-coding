@@ -23,5 +23,3 @@ for i in range(N-1):
         S = key+str(len(list(td)))
         print(S, end='')
     print()
-
-
